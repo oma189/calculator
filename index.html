@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my calculator</title>
+</head>
+<body>
+    
+<h1>Calculator created by oluoma</h1>
+<style>
+    h1{
+        text-align: center;
+        font-size: 30px;
+        background-color: skyblue;
+        padding: 30px;
+        color: #fff;
+    }
+    .formstyle{
+        width: 270px;
+        display: block;
+        margin: auto auto;
+        background-color: #555555;
+        color: #fff;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+
+    }
+    input{
+        width: 60px;
+        height: 40px;
+       border-radius: 5px;
+        background-color: #fff;
+        color: black;
+        font-size: 20px;
+        font-weight: bolder;
+        outline: none;
+        border: none;
+    }
+    #equ{
+        background-color: #FCBC72;
+        color: #fff;
+    }
+    #cal{
+        width: 270px;
+        background-color: #CEDFCE;
+        border: 5px solid #fff;
+        border-radius: 5px;
+        outline: none;
+      
+    }
+</style>
+<div class="formstyle">
+    <form name="formn">
+        <input type="text" name="equality" id="cal">
+        <br><br>
+        <input type="button" value="7" onclick="formn.equality.value  +='7'">
+        <input type="button" value="8" onclick="formn.equality.value  +='8'">
+        <input type="button" value="9" onclick="formn.equality.value  +='9'">
+        <input type="button" value="/" onclick="formn.equality.value  +='/'">
+    
+        <br><br>
+        <input type="button" value="4" onclick="formn.equality.value +='4'">
+        <input type="button" value="5" onclick="formn.equality.value +='5'">
+        <input type="button" value="6" onclick="formn.equality.value +='6'">
+        <input type="button" value="*" onclick="formn.equality.value  +='*'">
+        <br><br>
+        <input type="button" value="1" onclick="formn.equality.value +='1'" >
+        <input type="button" value="2" onclick="formn.equality.value +='2'">
+        <input type="button" value="3" onclick="formn.equality.value +='3'">
+        <input type="button" value="-" onclick="formn.equality.value +='-'">
+        
+        <br><br>
+        <input type="button" value="0" onclick="formn.equality.value  +='0'">
+        <input type="button" value="." onclick="formn.equality.value  +='.'">
+        <input type="button" value="+" onclick="formn.equality.value  +='+'">
+        <input type = "button" id="equ" value = "=" onclick = "formn.equality.value = eval(formn.equality.value) ">  
+
+        
+
+    </form>
+</div>
+
+
+</body>
+</html>
